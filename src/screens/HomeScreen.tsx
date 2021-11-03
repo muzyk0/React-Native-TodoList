@@ -24,13 +24,13 @@ export default function HomeScreen({ navigation }) {
 
     // const [data, setData] = useState("");
 
-    // const getData = async () => {
-    //     dispatch(getTodo());
-    // };
+    const getData = async () => {
+        dispatch(getTodo());
+    };
 
-    // useEffect(() => {
-    //     getData();
-    // }, []);
+    useEffect(() => {
+        getData();
+    }, []);
 
     const addToDo = async () => {
         const toAdd = { id: +Date.now(), value };

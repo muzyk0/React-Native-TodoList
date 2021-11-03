@@ -1,6 +1,8 @@
-export const getTodo = (data) => async (dispatch) => {
+import { API_KEY, instance } from "../../api/axios-instance";
+
+export const getTodo = () => async (dispatch) => {
     try {
-        // const res = await axios.get("URL");
+        // const res = await instance.get("todo-lists");
         // dispatch({
         //     type: "ADD_TODO",
         //     payload: res,
@@ -10,7 +12,7 @@ export const getTodo = (data) => async (dispatch) => {
 
 export const deleteTodo = (data) => async (dispatch) => {
     try {
-        // const res = await axios.delete("URL");
+        // const res = await instance.delete("URL");
         // dispatch({
         //     type: "ADD_TODO",
         //     payload: res,
